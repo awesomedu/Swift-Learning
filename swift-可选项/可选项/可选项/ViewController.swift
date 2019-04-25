@@ -15,6 +15,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         option()
         plus()
+        qiangzhijiexi()
+        kexuanbangding()
     }
     
     func option(){
@@ -33,6 +35,29 @@ class ViewController: UIViewController {
         let oName:String? = "heheh"
         guard let name = oName else {
             print("else")
+        }
+    }
+    
+    func qiangzhijiexi(){
+        var myString:String?
+        myString = "hello,swift"
+        if myString != nil{
+            print(myString!)
+        }else{
+            print("myString = nil")
+        }
+    }
+    
+    func kexuanbangding(){
+        var myString : String?
+        // MARK 可选绑定
+        // 1
+        myString = nil
+        // 2
+        myString = "hhhhhhTD"
+        
+        if let constant = myString {
+            print("this is \(constant)")
         }
     }
 
